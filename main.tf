@@ -25,18 +25,6 @@ resource "aws_security_group" "main" {
   }
 }
 
-# EC2 Instances
-resource "aws_instance" "servers" {
-  count                  = 2
-  ami                    = var.ami_id
-  instance_type          = var.instance_type
-  subnet_id              = var.subnet_id    # ✅ add this line
-  vpc_security_group_ids = [aws_security_group.main.id]
-
-  tags = {
-    Name = "server-${count.index + 1}"
-  }
-}
 # S3 Bucket
 resource "aws_s3_bucket" "main" {
   bucket = var.bucket_name
