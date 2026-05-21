@@ -1,7 +1,3 @@
-# Security Group
-resource "aws_security_group" "main" {
-  name        = "main-sg"
-  description = "Allow SSH and HTTP"
 
   ingress {
     from_port   = 22
