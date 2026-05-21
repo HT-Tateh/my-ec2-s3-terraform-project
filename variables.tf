@@ -13,7 +13,7 @@ variable "instance_type" {
 
 variable "bucket_name" {
   description = "S3 bucket name"
-  default     = "my-app-bucket-44-2026"
+  default     = "my-app-bucket-45-2026"
 }
 
 variable "subnet_id" {
