@@ -1,0 +1,5 @@
+aws_region    = "us-east-1"
+ami_id        = "ami-03f47825961d2116f"
+instance_type = "t3.micro"
+bucket_name   = "my-app-bucket-44-2026"
+subnet_id = "subnet-02feb9bf4163d04c3"
